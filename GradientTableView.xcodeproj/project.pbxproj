@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41F0EFD626F3B747002326E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0EFD526F3B747002326E8 /* AppDelegate.swift */; };
+		41F0EFD826F3B747002326E8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0EFD726F3B747002326E8 /* SceneDelegate.swift */; };
+		41F0EFDA26F3B747002326E8 /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0EFD926F3B747002326E8 /* RestaurantListViewController.swift */; };
+		41F0EFDD26F3B747002326E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F0EFDB26F3B747002326E8 /* Main.storyboard */; };
+		41F0EFDF26F3B74B002326E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F0EFDE26F3B74B002326E8 /* Assets.xcassets */; };
+		41F0EFE226F3B74B002326E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F0EFE026F3B74B002326E8 /* LaunchScreen.storyboard */; };
+		41F0EFED26F3B74B002326E8 /* GradientTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0EFEC26F3B74B002326E8 /* GradientTableViewTests.swift */; };
+		41F0EFF826F3B74B002326E8 /* GradientTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0EFF726F3B74B002326E8 /* GradientTableViewUITests.swift */; };
+		41F0F00826F3B87A002326E8 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F00626F3B87A002326E8 /* RestaurantTableViewCell.swift */; };
+		41F0F00926F3B87A002326E8 /* RestaurantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41F0F00726F3B87A002326E8 /* RestaurantTableViewCell.xib */; };
+		41F0F00C26F3C373002326E8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F00B26F3C373002326E8 /* Endpoint.swift */; };
+		41F0F00E26F3D3D9002326E8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F00D26F3D3D9002326E8 /* NetworkService.swift */; };
+		41F0F01126F3DFFF002326E8 /* Businesses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F01026F3DFFF002326E8 /* Businesses.swift */; };
+		41F0F01526F44F2E002326E8 /* MaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F01426F44F2E002326E8 /* MaskView.swift */; };
+		41F0F01D26F5A071002326E8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F01C26F5A071002326E8 /* HomeViewController.swift */; };
+		41F0F01F26F5A0F9002326E8 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F01E26F5A0F9002326E8 /* HomeViewModel.swift */; };
+		41F0F02126F5B3AA002326E8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F02026F5B3AA002326E8 /* MapViewController.swift */; };
+		41F0F02326F9ECFA002326E8 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F0F02226F9ECFA002326E8 /* MapViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41F0EFE926F3B74B002326E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41F0EFCA26F3B747002326E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41F0EFD126F3B747002326E8;
+			remoteInfo = GradientTableView;
+		};
+		41F0EFF426F3B74B002326E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41F0EFCA26F3B747002326E8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41F0EFD126F3B747002326E8;
+			remoteInfo = GradientTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41F0EFD226F3B747002326E8 /* GradientTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradientTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F0EFD526F3B747002326E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41F0EFD726F3B747002326E8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41F0EFD926F3B747002326E8 /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		41F0EFDC26F3B747002326E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41F0EFDE26F3B74B002326E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41F0EFE126F3B74B002326E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41F0EFE326F3B74B002326E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F0EFE826F3B74B002326E8 /* GradientTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F0EFEC26F3B74B002326E8 /* GradientTableViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTableViewTests.swift; sourceTree = "<group>"; };
+		41F0EFEE26F3B74B002326E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F0EFF326F3B74B002326E8 /* GradientTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GradientTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F0EFF726F3B74B002326E8 /* GradientTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTableViewUITests.swift; sourceTree = "<group>"; };
+		41F0EFF926F3B74B002326E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F0F00626F3B87A002326E8 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		41F0F00726F3B87A002326E8 /* RestaurantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantTableViewCell.xib; sourceTree = "<group>"; };
+		41F0F00B26F3C373002326E8 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		41F0F00D26F3D3D9002326E8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		41F0F01026F3DFFF002326E8 /* Businesses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Businesses.swift; sourceTree = "<group>"; };
+		41F0F01426F44F2E002326E8 /* MaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskView.swift; sourceTree = "<group>"; };
+		41F0F01C26F5A071002326E8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		41F0F01E26F5A0F9002326E8 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		41F0F02026F5B3AA002326E8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		41F0F02226F9ECFA002326E8 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41F0EFCF26F3B747002326E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F0EFE526F3B74B002326E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F0EFF026F3B74B002326E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41F0EFC926F3B747002326E8 = {
+			isa = PBXGroup;
+			children = (
+				41F0EFD426F3B747002326E8 /* GradientTableView */,
+				41F0EFEB26F3B74B002326E8 /* GradientTableViewTests */,
+				41F0EFF626F3B74B002326E8 /* GradientTableViewUITests */,
+				41F0EFD326F3B747002326E8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41F0EFD326F3B747002326E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41F0EFD226F3B747002326E8 /* GradientTableView.app */,
+				41F0EFE826F3B74B002326E8 /* GradientTableViewTests.xctest */,
+				41F0EFF326F3B74B002326E8 /* GradientTableViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41F0EFD426F3B747002326E8 /* GradientTableView */ = {
+			isa = PBXGroup;
+			children = (
+				41F0F01B26F5A047002326E8 /* HomeScene */,
+				41F0F01A26F5A028002326E8 /* PlacesMapScene */,
+				41F0F01926F59FFD002326E8 /* PlacesListScene */,
+				41F0F00A26F3C365002326E8 /* Network */,
+				41F0F01726F59F43002326E8 /* Views */,
+				41F0F00F26F3DFF2002326E8 /* Model */,
+				41F0F01826F59F4C002326E8 /* Resources */,
+				41F0EFE326F3B74B002326E8 /* Info.plist */,
+			);
+			path = GradientTableView;
+			sourceTree = "<group>";
+		};
+		41F0EFEB26F3B74B002326E8 /* GradientTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				41F0EFEC26F3B74B002326E8 /* GradientTableViewTests.swift */,
+				41F0EFEE26F3B74B002326E8 /* Info.plist */,
+			);
+			path = GradientTableViewTests;
+			sourceTree = "<group>";
+		};
+		41F0EFF626F3B74B002326E8 /* GradientTableViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41F0EFF726F3B74B002326E8 /* GradientTableViewUITests.swift */,
+				41F0EFF926F3B74B002326E8 /* Info.plist */,
+			);
+			path = GradientTableViewUITests;
+			sourceTree = "<group>";
+		};
+		41F0F00526F3B82D002326E8 /* RestaurantCell */ = {
+			isa = PBXGroup;
+			children = (
+				41F0F01426F44F2E002326E8 /* MaskView.swift */,
+				41F0F00626F3B87A002326E8 /* RestaurantTableViewCell.swift */,
+				41F0F00726F3B87A002326E8 /* RestaurantTableViewCell.xib */,
+			);
+			path = RestaurantCell;
+			sourceTree = "<group>";
+		};
+		41F0F00A26F3C365002326E8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				41F0F00B26F3C373002326E8 /* Endpoint.swift */,
+				41F0F00D26F3D3D9002326E8 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		41F0F00F26F3DFF2002326E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41F0F01026F3DFFF002326E8 /* Businesses.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41F0F01726F59F43002326E8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41F0EFE026F3B74B002326E8 /* LaunchScreen.storyboard */,
+				41F0EFDB26F3B747002326E8 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41F0F01826F59F4C002326E8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				41F0EFDE26F3B74B002326E8 /* Assets.xcassets */,
+				41F0EFD726F3B747002326E8 /* SceneDelegate.swift */,
+				41F0EFD526F3B747002326E8 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		41F0F01926F59FFD002326E8 /* PlacesListScene */ = {
+			isa = PBXGroup;
+			children = (
+				41F0F00526F3B82D002326E8 /* RestaurantCell */,
+				41F0EFD926F3B747002326E8 /* RestaurantListViewController.swift */,
+			);
+			path = PlacesListScene;
+			sourceTree = "<group>";
+		};
+		41F0F01A26F5A028002326E8 /* PlacesMapScene */ = {
+			isa = PBXGroup;
+			children = (
+				41F0F02026F5B3AA002326E8 /* MapViewController.swift */,
+				41F0F02226F9ECFA002326E8 /* MapViewModel.swift */,
+			);
+			path = PlacesMapScene;
+			sourceTree = "<group>";
+		};
+		41F0F01B26F5A047002326E8 /* HomeScene */ = {
+			isa = PBXGroup;
+			children = (
+				41F0F01C26F5A071002326E8 /* HomeViewController.swift */,
+				41F0F01E26F5A0F9002326E8 /* HomeViewModel.swift */,
+			);
+			path = HomeScene;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41F0EFD126F3B747002326E8 /* GradientTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41F0EFFC26F3B74B002326E8 /* Build configuration list for PBXNativeTarget "GradientTableView" */;
+			buildPhases = (
+				41F0EFCE26F3B747002326E8 /* Sources */,
+				41F0EFCF26F3B747002326E8 /* Frameworks */,
+				41F0EFD026F3B747002326E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GradientTableView;
+			productName = GradientTableView;
+			productReference = 41F0EFD226F3B747002326E8 /* GradientTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41F0EFE726F3B74B002326E8 /* GradientTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41F0EFFF26F3B74B002326E8 /* Build configuration list for PBXNativeTarget "GradientTableViewTests" */;
+			buildPhases = (
+				41F0EFE426F3B74B002326E8 /* Sources */,
+				41F0EFE526F3B74B002326E8 /* Frameworks */,
+				41F0EFE626F3B74B002326E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41F0EFEA26F3B74B002326E8 /* PBXTargetDependency */,
+			);
+			name = GradientTableViewTests;
+			productName = GradientTableViewTests;
+			productReference = 41F0EFE826F3B74B002326E8 /* GradientTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41F0EFF226F3B74B002326E8 /* GradientTableViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41F0F00226F3B74B002326E8 /* Build configuration list for PBXNativeTarget "GradientTableViewUITests" */;
+			buildPhases = (
+				41F0EFEF26F3B74B002326E8 /* Sources */,
+				41F0EFF026F3B74B002326E8 /* Frameworks */,
+				41F0EFF126F3B74B002326E8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41F0EFF526F3B74B002326E8 /* PBXTargetDependency */,
+			);
+			name = GradientTableViewUITests;
+			productName = GradientTableViewUITests;
+			productReference = 41F0EFF326F3B74B002326E8 /* GradientTableViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41F0EFCA26F3B747002326E8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					41F0EFD126F3B747002326E8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					41F0EFE726F3B74B002326E8 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 41F0EFD126F3B747002326E8;
+					};
+					41F0EFF226F3B74B002326E8 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 41F0EFD126F3B747002326E8;
+					};
+				};
+			};
+			buildConfigurationList = 41F0EFCD26F3B747002326E8 /* Build configuration list for PBXProject "GradientTableView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41F0EFC926F3B747002326E8;
+			productRefGroup = 41F0EFD326F3B747002326E8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41F0EFD126F3B747002326E8 /* GradientTableView */,
+				41F0EFE726F3B74B002326E8 /* GradientTableViewTests */,
+				41F0EFF226F3B74B002326E8 /* GradientTableViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41F0EFD026F3B747002326E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F0F00926F3B87A002326E8 /* RestaurantTableViewCell.xib in Resources */,
+				41F0EFE226F3B74B002326E8 /* LaunchScreen.storyboard in Resources */,
+				41F0EFDF26F3B74B002326E8 /* Assets.xcassets in Resources */,
+				41F0EFDD26F3B747002326E8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F0EFE626F3B74B002326E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F0EFF126F3B74B002326E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41F0EFCE26F3B747002326E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F0F02126F5B3AA002326E8 /* MapViewController.swift in Sources */,
+				41F0F01526F44F2E002326E8 /* MaskView.swift in Sources */,
+				41F0F00826F3B87A002326E8 /* RestaurantTableViewCell.swift in Sources */,
+				41F0EFDA26F3B747002326E8 /* RestaurantListViewController.swift in Sources */,
+				41F0F01F26F5A0F9002326E8 /* HomeViewModel.swift in Sources */,
+				41F0F01126F3DFFF002326E8 /* Businesses.swift in Sources */,
+				41F0EFD626F3B747002326E8 /* AppDelegate.swift in Sources */,
+				41F0F01D26F5A071002326E8 /* HomeViewController.swift in Sources */,
+				41F0EFD826F3B747002326E8 /* SceneDelegate.swift in Sources */,
+				41F0F00E26F3D3D9002326E8 /* NetworkService.swift in Sources */,
+				41F0F00C26F3C373002326E8 /* Endpoint.swift in Sources */,
+				41F0F02326F9ECFA002326E8 /* MapViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F0EFE426F3B74B002326E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F0EFED26F3B74B002326E8 /* GradientTableViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41F0EFEF26F3B74B002326E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41F0EFF826F3B74B002326E8 /* GradientTableViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41F0EFEA26F3B74B002326E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41F0EFD126F3B747002326E8 /* GradientTableView */;
+			targetProxy = 41F0EFE926F3B74B002326E8 /* PBXContainerItemProxy */;
+		};
+		41F0EFF526F3B74B002326E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41F0EFD126F3B747002326E8 /* GradientTableView */;
+			targetProxy = 41F0EFF426F3B74B002326E8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41F0EFDB26F3B747002326E8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41F0EFDC26F3B747002326E8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41F0EFE026F3B74B002326E8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41F0EFE126F3B74B002326E8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41F0EFFA26F3B74B002326E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41F0EFFB26F3B74B002326E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41F0EFFD26F3B74B002326E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M84D5994X4;
+				INFOPLIST_FILE = GradientTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mittens.GradientTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41F0EFFE26F3B74B002326E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M84D5994X4;
+				INFOPLIST_FILE = GradientTableView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mittens.GradientTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41F0F00026F3B74B002326E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M84D5994X4;
+				INFOPLIST_FILE = GradientTableViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mittens.GradientTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradientTableView.app/GradientTableView";
+			};
+			name = Debug;
+		};
+		41F0F00126F3B74B002326E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M84D5994X4;
+				INFOPLIST_FILE = GradientTableViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mittens.GradientTableViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GradientTableView.app/GradientTableView";
+			};
+			name = Release;
+		};
+		41F0F00326F3B74B002326E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M84D5994X4;
+				INFOPLIST_FILE = GradientTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mittens.GradientTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GradientTableView;
+			};
+			name = Debug;
+		};
+		41F0F00426F3B74B002326E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M84D5994X4;
+				INFOPLIST_FILE = GradientTableViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mittens.GradientTableViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GradientTableView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41F0EFCD26F3B747002326E8 /* Build configuration list for PBXProject "GradientTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F0EFFA26F3B74B002326E8 /* Debug */,
+				41F0EFFB26F3B74B002326E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41F0EFFC26F3B74B002326E8 /* Build configuration list for PBXNativeTarget "GradientTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F0EFFD26F3B74B002326E8 /* Debug */,
+				41F0EFFE26F3B74B002326E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41F0EFFF26F3B74B002326E8 /* Build configuration list for PBXNativeTarget "GradientTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F0F00026F3B74B002326E8 /* Debug */,
+				41F0F00126F3B74B002326E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41F0F00226F3B74B002326E8 /* Build configuration list for PBXNativeTarget "GradientTableViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F0F00326F3B74B002326E8 /* Debug */,
+				41F0F00426F3B74B002326E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41F0EFCA26F3B747002326E8 /* Project object */;
+}
