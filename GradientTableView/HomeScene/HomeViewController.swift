@@ -12,7 +12,6 @@ class HomeViewController: UIViewController {
     private lazy var placesViewController: RestaurantListViewController = {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         var viewController = storyboard.instantiateViewController(identifier: "RestaurantListViewController") as! RestaurantListViewController
-        print(viewModel.places)
         viewController.places = viewModel.places ?? []
         self.add(asChildViewController: viewController)
         return viewController

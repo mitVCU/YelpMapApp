@@ -27,7 +27,7 @@ class RestaurantListViewController: UIViewController {
         restaurantTableView.dataSource = self
         restaurantTableView.delegate = self
         
-        restaurantTableView.register(RestaurantTableViewCell().nib(), forCellReuseIdentifier: RestaurantTableViewCell().identifier)
+        restaurantTableView.register(PlaceTableViewCell.nib(), forCellReuseIdentifier: PlaceTableViewCell.identifier)
     }
     
     func configureGradientBackground() {
@@ -70,14 +70,14 @@ extension RestaurantListViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = restaurantTableView.dequeueReusableCell(withIdentifier: RestaurantTableViewCell().identifier) as? RestaurantTableViewCell {
-            cell.titleLabel.text = places[indexPath.row].name
-            cell.subHeaderLabel.text = "\(places[indexPath.row].price ?? "$$$$") * \(places[indexPath.row].distance ?? 0.1) miles"
-            cell.accessoryType = .disclosureIndicator
-            return cell
-        }
         
-        return UITableViewCell()
+        guard let cell = restaurantTableView.dequeueReusableCell(withIdentifier: PlaceTableViewCell.identifier) as? PlaceTableViewCell else { return UITableViewCell() }
+        
+        cell.tileLabel.text = places[indexPath.row].name
+        cell.subTitleLabel.text = "\(places[indexPath.row].price ?? "$$$$") * \(places[indexPath.row].distance ?? 0.0) miles"
+        return cell
+        
+        
     }
     
 }
