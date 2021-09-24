@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     private lazy var placesViewController: RestaurantListViewController = {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         var viewController = storyboard.instantiateViewController(identifier: "RestaurantListViewController") as! RestaurantListViewController
-        viewController.places = viewModel.places ?? []
+        viewController.viewModel = PlacesListViewModel(places: viewModel.places ?? [])
         self.add(asChildViewController: viewController)
         return viewController
     }()
@@ -40,7 +40,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         viewModel = HomeViewModel()
         viewModel.delegate = self
-        
+        configureSegmentControl()
         didUpdateState()
     }
     
@@ -53,6 +53,11 @@ class HomeViewController: UIViewController {
             manager.desiredAccuracy = kCLLocationAccuracyBest
             manager.requestLocation()
         }
+    }
+    
+    func configureSegmentControl() {
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        segmentedController.setTitleTextAttributes(titleTextAttributes, for: .selected)
     }
     
     func updateView() {

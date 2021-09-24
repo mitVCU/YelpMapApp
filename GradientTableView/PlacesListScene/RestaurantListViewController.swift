@@ -13,7 +13,7 @@ class RestaurantListViewController: UIViewController {
 
     @IBOutlet weak var restaurantTableView: UITableView!
     
-    var places : [Business] = []
+    var viewModel: PlacesListViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +56,11 @@ class RestaurantListViewController: UIViewController {
         topView.backgroundColor = UIColor.white
         restaurantTableView.addSubview(topView)
         
-        restaurantTableView.contentInset = UIEdgeInsets(top: 60, left: 0, bottom: 0, right: 0)
+        restaurantTableView.contentInset = UIEdgeInsets(top: 60, left: 0, bottom: -restaurantTableView.frame.height, right: 0)
+        
+        let customView = UIView(frame: CGRect(x: 0, y: 0, width: restaurantTableView.frame.width, height: restaurantTableView.frame.height))
+        customView.backgroundColor = UIColor.white
+        restaurantTableView.tableFooterView = customView
 
     }
 
@@ -66,15 +70,16 @@ class RestaurantListViewController: UIViewController {
 extension RestaurantListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return places.count
+        return viewModel.places.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = restaurantTableView.dequeueReusableCell(withIdentifier: PlaceTableViewCell.identifier) as? PlaceTableViewCell else { return UITableViewCell() }
+        let place = viewModel.places[indexPath.row]
+        cell.tileLabel.text = place.name
+        cell.subTitleLabel.attributedText = viewModel.getDetailsText(price: place.price, distance: place.distance)
         
-        cell.tileLabel.text = places[indexPath.row].name
-        cell.subTitleLabel.text = "\(places[indexPath.row].price ?? "$$$$") * \(places[indexPath.row].distance ?? 0.0) miles"
         return cell
         
         

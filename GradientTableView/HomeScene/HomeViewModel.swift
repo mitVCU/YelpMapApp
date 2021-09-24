@@ -55,6 +55,7 @@ class HomeViewModel {
                 self.state = .success
             case .failure(let error):
                 self.anyError = error
+                print(error, " :Network error")
                 self.state = .failure
             }
         }
