@@ -16,7 +16,8 @@ struct Business: Decodable {
     let price: String?
     let coordinates: coordinate?
     let distance: Double?
-
+    let image_url: URL?
+    let url: URL?
 }
 
 struct coordinate: Decodable {

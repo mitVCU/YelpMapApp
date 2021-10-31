@@ -25,6 +25,9 @@
 		41FF0A9626FD00C0004EAAA1 /* PlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF0A9426FD00C0004EAAA1 /* PlaceTableViewCell.swift */; };
 		41FF0A9726FD00C0004EAAA1 /* PlaceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41FF0A9526FD00C0004EAAA1 /* PlaceTableViewCell.xib */; };
 		41FF0A9926FD0843004EAAA1 /* PlacesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF0A9826FD0843004EAAA1 /* PlacesListViewModel.swift */; };
+		41FF0A9D26FD6BC8004EAAA1 /* PlacesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF0A9B26FD6BC8004EAAA1 /* PlacesDetailViewController.swift */; };
+		41FF0A9E26FD6BC8004EAAA1 /* PlacesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41FF0A9C26FD6BC8004EAAA1 /* PlacesDetailViewController.xib */; };
+		41FF0AA026FD709A004EAAA1 /* PlacesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF0A9F26FD709A004EAAA1 /* PlacesDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		41FF0A9426FD00C0004EAAA1 /* PlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTableViewCell.swift; sourceTree = "<group>"; };
 		41FF0A9526FD00C0004EAAA1 /* PlaceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceTableViewCell.xib; sourceTree = "<group>"; };
 		41FF0A9826FD0843004EAAA1 /* PlacesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListViewModel.swift; sourceTree = "<group>"; };
+		41FF0A9B26FD6BC8004EAAA1 /* PlacesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailViewController.swift; sourceTree = "<group>"; };
+		41FF0A9C26FD6BC8004EAAA1 /* PlacesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesDetailViewController.xib; sourceTree = "<group>"; };
+		41FF0A9F26FD709A004EAAA1 /* PlacesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 		41F0EFD426F3B747002326E8 /* GradientTableView */ = {
 			isa = PBXGroup;
 			children = (
+				41FF0A9A26FD6BA4004EAAA1 /* PlacesDetailScene */,
 				41F0F01B26F5A047002326E8 /* HomeScene */,
 				41F0F01A26F5A028002326E8 /* PlacesMapScene */,
 				41F0F01926F59FFD002326E8 /* PlacesListScene */,
@@ -220,6 +227,16 @@
 				41FF0A9526FD00C0004EAAA1 /* PlaceTableViewCell.xib */,
 			);
 			path = PlacesCell;
+			sourceTree = "<group>";
+		};
+		41FF0A9A26FD6BA4004EAAA1 /* PlacesDetailScene */ = {
+			isa = PBXGroup;
+			children = (
+				41FF0A9B26FD6BC8004EAAA1 /* PlacesDetailViewController.swift */,
+				41FF0A9C26FD6BC8004EAAA1 /* PlacesDetailViewController.xib */,
+				41FF0A9F26FD709A004EAAA1 /* PlacesDetailViewModel.swift */,
+			);
+			path = PlacesDetailScene;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41FF0A9E26FD6BC8004EAAA1 /* PlacesDetailViewController.xib in Resources */,
 				41F0EFE226F3B74B002326E8 /* LaunchScreen.storyboard in Resources */,
 				41F0EFDF26F3B74B002326E8 /* Assets.xcassets in Resources */,
 				41FF0A9726FD00C0004EAAA1 /* PlaceTableViewCell.xib in Resources */,
@@ -362,8 +380,10 @@
 				41F0EFD626F3B747002326E8 /* AppDelegate.swift in Sources */,
 				41F0F01D26F5A071002326E8 /* HomeViewController.swift in Sources */,
 				41F0EFD826F3B747002326E8 /* SceneDelegate.swift in Sources */,
+				41FF0AA026FD709A004EAAA1 /* PlacesDetailViewModel.swift in Sources */,
 				41F0F00E26F3D3D9002326E8 /* NetworkService.swift in Sources */,
 				41F0F00C26F3C373002326E8 /* Endpoint.swift in Sources */,
+				41FF0A9D26FD6BC8004EAAA1 /* PlacesDetailViewController.swift in Sources */,
 				41F0F02326F9ECFA002326E8 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -82,7 +82,14 @@ extension RestaurantListViewController: UITableViewDelegate, UITableViewDataSour
         
         return cell
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let navigation = UINavigationController()
+        let viewcontroller = PlacesDetailViewController()
+        viewcontroller.viewModel = PlacesDetailViewModel(place: viewModel.places[indexPath.row])
         
+        navigation.present(viewcontroller, animated: true)
     }
     
 }
