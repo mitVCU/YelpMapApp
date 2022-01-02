@@ -34,7 +34,13 @@ class NetworkService {
                 completion(.failure(NetworkError.dataFailure))
                 return
             }
-                        
+
+            // TODO: Print statement for Debugging
+//            if let JSONString = String(data: data
+//                                       , encoding: String.Encoding.utf8) {
+//               print(JSONString)
+//            }
+            
             if let resultModel = try? JSONDecoder().decode(T.self, from: data) {
                 completion(.success(resultModel))
             } else {

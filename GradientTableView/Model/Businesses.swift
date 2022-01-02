@@ -12,15 +12,21 @@ struct Businesses: Decodable {
 
 struct Business: Decodable {
     let id: String
+    let categories: [Categories]
     let name: String
     let price: String?
-    let coordinates: coordinate?
+    let coordinates: Coordinates?
     let distance: Double?
     let image_url: URL?
     let url: URL?
 }
 
-struct coordinate: Decodable {
+struct Categories: Decodable {
+    let alias: String
+    let title: String
+}
+
+struct Coordinates: Decodable {
     let latitude: Double
     let longitude: Double
 }

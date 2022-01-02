@@ -44,6 +44,23 @@ class PlacesListViewModel {
         
         return mutableAttributedString
     }
+    
+    func getPlaceType(place: Business) -> PlaceType? {
+        for category in place.categories {
+            if category.alias == "burgers" {
+                return .burgers
+            } else if category.alias ==  "chinese" {
+                return .chinese
+            }
+            else if category.alias ==  "pizza" {
+                return .pizza
+            }
+            else if category.alias ==  "mexican" {
+                return .mexican
+            }
+        }
+        return .burgers
+    }
 }
 
 extension Double {

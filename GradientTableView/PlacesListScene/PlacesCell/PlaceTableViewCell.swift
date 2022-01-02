@@ -1,4 +1,4 @@
-//
+    //
 //  PlaceTableViewCell.swift
 //  GradientTableView
 //
@@ -14,12 +14,14 @@ class PlaceTableViewCell: UITableViewCell {
     @IBOutlet weak var tileLabel: UILabel!
     @IBOutlet weak var subTitleLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    func setIcon(place: PlaceType) {
+        let mask = IconView(frame: frame, place: place)
+        self.mask = mask.createMask()
     }
     
     static func nib() -> UINib {
         return UINib(nibName: identifier, bundle: nil)
     }
-    
 }
+
+

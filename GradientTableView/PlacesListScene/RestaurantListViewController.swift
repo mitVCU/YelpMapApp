@@ -61,9 +61,10 @@ class RestaurantListViewController: UIViewController {
         let customView = UIView(frame: CGRect(x: 0, y: 0, width: restaurantTableView.frame.width, height: restaurantTableView.frame.height))
         customView.backgroundColor = UIColor.white
         restaurantTableView.tableFooterView = customView
+        
+        self.restaurantTableView.separatorStyle = .none
 
     }
-
 
 }
 
@@ -73,23 +74,34 @@ extension RestaurantListViewController: UITableViewDelegate, UITableViewDataSour
         return viewModel.places.count
     }
     
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let place = viewModel.places[indexPath.row]
+
+        guard let cell = cell as? PlaceTableViewCell else { return }
+        guard let placeType = viewModel.getPlaceType(place: place) else { return }
+        
+        cell.setIcon(place: placeType)
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         guard let cell = restaurantTableView.dequeueReusableCell(withIdentifier: PlaceTableViewCell.identifier) as? PlaceTableViewCell else { return UITableViewCell() }
         let place = viewModel.places[indexPath.row]
         cell.tileLabel.text = place.name
         cell.subTitleLabel.attributedText = viewModel.getDetailsText(price: place.price, distance: place.distance)
-        
+        cell.backgroundColor = .white
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let navigation = UINavigationController()
-        let viewcontroller = PlacesDetailViewController()
-        viewcontroller.viewModel = PlacesDetailViewModel(place: viewModel.places[indexPath.row])
-        
-        navigation.present(viewcontroller, animated: true)
+        guard let myVC = self.storyboard?.instantiateViewController(withIdentifier: "PlacesDetailViewController") else { return }
+        let navController = UINavigationController(rootViewController: myVC)
+
+        self.navigationController?.present(navController, animated: true, completion: nil)
     }
+    
+
     
 }

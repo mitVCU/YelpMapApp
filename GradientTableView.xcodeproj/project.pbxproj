@@ -28,6 +28,7 @@
 		41FF0A9D26FD6BC8004EAAA1 /* PlacesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF0A9B26FD6BC8004EAAA1 /* PlacesDetailViewController.swift */; };
 		41FF0A9E26FD6BC8004EAAA1 /* PlacesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41FF0A9C26FD6BC8004EAAA1 /* PlacesDetailViewController.xib */; };
 		41FF0AA026FD709A004EAAA1 /* PlacesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FF0A9F26FD709A004EAAA1 /* PlacesDetailViewModel.swift */; };
+		D28EE0302776C40F0086F930 /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28EE02F2776C40F0086F930 /* IconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		41FF0A9B26FD6BC8004EAAA1 /* PlacesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailViewController.swift; sourceTree = "<group>"; };
 		41FF0A9C26FD6BC8004EAAA1 /* PlacesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlacesDetailViewController.xib; sourceTree = "<group>"; };
 		41FF0A9F26FD709A004EAAA1 /* PlacesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetailViewModel.swift; sourceTree = "<group>"; };
+		D28EE02F2776C40F0086F930 /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +180,7 @@
 			children = (
 				41F0EFE026F3B74B002326E8 /* LaunchScreen.storyboard */,
 				41F0EFDB26F3B747002326E8 /* Main.storyboard */,
+				D28EE02F2776C40F0086F930 /* IconView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				41FF0A9626FD00C0004EAAA1 /* PlaceTableViewCell.swift in Sources */,
 				41F0F01F26F5A0F9002326E8 /* HomeViewModel.swift in Sources */,
 				41FF0A9926FD0843004EAAA1 /* PlacesListViewModel.swift in Sources */,
+				D28EE0302776C40F0086F930 /* IconView.swift in Sources */,
 				41F0F01126F3DFFF002326E8 /* Businesses.swift in Sources */,
 				41F0EFD626F3B747002326E8 /* AppDelegate.swift in Sources */,
 				41F0F01D26F5A071002326E8 /* HomeViewController.swift in Sources */,
