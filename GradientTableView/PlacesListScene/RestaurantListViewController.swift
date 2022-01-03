@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 
 
@@ -14,6 +15,7 @@ class RestaurantListViewController: UIViewController {
     @IBOutlet weak var restaurantTableView: UITableView!
     
     var viewModel: PlacesListViewModel!
+    var location: CLLocation?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -96,12 +98,8 @@ extension RestaurantListViewController: UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let myVC = self.storyboard?.instantiateViewController(withIdentifier: "PlacesDetailViewController") else { return }
-        let navController = UINavigationController(rootViewController: myVC)
-
-        self.navigationController?.present(navController, animated: true, completion: nil)
+        let place = viewModel.places[indexPath.row]
+        let detailVC = PlacesDetailViewController(place: place, userLocation: location!)
+        navigationController?.pushViewController(detailVC, animated: true)
     }
-    
-
-    
 }

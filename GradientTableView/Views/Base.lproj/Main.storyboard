@@ -52,7 +52,9 @@
                             <constraint firstItem="cYw-WG-Uok" firstAttribute="centerX" secondItem="B9V-r3-i1j" secondAttribute="centerX" id="hMq-sg-yBE"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Fast Food Places" id="aYO-o2-Dob"/>
+                    <navigationItem key="navigationItem" title="Fast Food Places" id="aYO-o2-Dob">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="uRK-ui-s2h"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="containerView" destination="538-G9-AHb" id="aMw-yj-inM"/>
                         <outlet property="loadingSpinner" destination="smq-3l-Uc9" id="ArZ-so-0MN"/>

@@ -13,4 +13,6 @@ class PlacesDetailViewModel {
     init(place: Business) {
         self.place = place
     }
+    
+    
 }

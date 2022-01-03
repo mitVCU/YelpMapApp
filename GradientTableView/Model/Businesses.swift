@@ -19,6 +19,7 @@ struct Business: Decodable {
     let distance: Double?
     let image_url: URL?
     let url: URL?
+    let phone: String?
 }
 
 struct Categories: Decodable {

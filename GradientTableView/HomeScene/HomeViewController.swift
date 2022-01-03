@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         var viewController = storyboard.instantiateViewController(identifier: "RestaurantListViewController") as! RestaurantListViewController
         viewController.viewModel = PlacesListViewModel(places: viewModel.places ?? [])
+        viewController.location = viewModel.userLocation
         self.add(asChildViewController: viewController)
         return viewController
     }()
